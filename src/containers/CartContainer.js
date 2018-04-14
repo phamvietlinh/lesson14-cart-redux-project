@@ -28,13 +28,12 @@ class CartContainer extends Component {
         if(cart.length > 0){
             result = cart.map((item, index) => {
                 return (
-                    <CartItem 
-                    key={index} 
-                    item={item} 
-                    index={index} 
-                    onDeleteProductInCart={onDeleteProductInCart}
-                    onChangeMessage={onChangeMessage}
-                    onUpdateProductInCart={onUpdateProductInCart} />
+                    <CartItem key={index}
+                                item={item}
+                                index={index}
+                                onDeleteProductInCart={onDeleteProductInCart}
+                                onChangeMessage={onChangeMessage}
+                                onUpdateProductInCart={onUpdateProductInCart} />
                 )
             })
         }

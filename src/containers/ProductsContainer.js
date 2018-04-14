@@ -21,7 +21,7 @@ class ProductsContainer extends Component {
         var onChangeMessage = this.props.onChangeMessage;
         if(products.length > 0){
             result = products.map((product, index) => {
-                return <Product key={index} product={product} onAddToCart={onAddToCart} onChangeMessage={onChangeMessage}/>
+                return <Product key={index} product={product} onAddToCart={onAddToCart} onChangeMessage={onChangeMessage} />
             })
         }
         return result
